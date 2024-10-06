@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Fecha y hora -->
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha y hora"
+        android:textSize="16sp"
+        android:layout_gravity="start"
+        android:paddingTop="8dp"/>
+
+    <!--ingresar nombre -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nombre"
+        android:inputType="textPersonName"
+        android:importantForAutofill="yes"
+        android:minHeight="48dp"
+        android:textSize="16sp"/>
+
+    <!--RUT -->
+    <EditText
+        android:id="@+id/etRUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_rut"
+        android:inputType="text"
+        android:importantForAutofill="yes"
+        android:minHeight="48dp"
+        android:textSize="16sp"/>
+
+    <!-- Descripción del incidente -->
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_descripcion"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="yes"
+        android:minHeight="48dp"
+        android:textSize="16sp"/>
+
+    <!-- seleccionar el laboratorio -->
+    <Spinner
+        android:id="@+id/spinnerLaboratorios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/laboratorios"
+        android:minHeight="48dp"
+        android:textSize="16sp"/>
+
+    <!-- Botón para grabar el incidente -->
+    <Button
+        android:id="@+id/btnGrabar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_grabar_text"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"
+        android:textSize="18sp"/>
+
+</LinearLayout>

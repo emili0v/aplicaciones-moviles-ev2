@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Registro de incidentes en laboratorios</string>
+    <string name="hint_nombre">Ingresa tu nombre</string>
+    <string name="hint_rut">Ingresa tu RUT</string>
+    <string name="hint_descripcion">Describe el incidente</string>
+    <string name="btn_grabar_text">Grabar incidente</string>
+</resources>
+
